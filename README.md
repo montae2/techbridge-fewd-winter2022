@@ -4,3 +4,4 @@ Empathize is title "Empathize.docx"
 Define is titled "Problem Statement.docx"
 Ideate is titled "Ideate.docx"
 Prototype is titled "Prototype.pptx"
+"User Profiles.docx" is a layout of the company's users
