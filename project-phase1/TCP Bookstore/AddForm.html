@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Inventory</title>
+    <style>
+        h1{
+            border:double;
+            border-radius: 6px;
+            text-align: center;
+            margin-left: 200px;
+            margin-right: 200px;
+            padding: 25px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+        #form {
+           border-radius: 5px; 
+           padding: 60px;
+        }
+        input {
+            display: flex;
+            width: 60%;
+        }
+        .buttons {
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Rare Book</h1>
+    
+    <div id="form">
+    <form>
+        <label>Title:</label>
+        <input type="text"/><br/>
+        <label>Author:</label>
+        <input type="text"/><br/>
+        <label>Price:</label>
+        <input type="text" maxlength="15" min="0.01" max="10000"/><br/>
+        <label>Location:</label>
+        <input type="text"><br/>
+        <label>Condition:</label>
+        <input type="text" style=text-align:center  placeholder="Rank:1=Poor/5=Excellent"/><br/>
+       
+        <div class="buttons">
+            <input type="submit">
+            <input type="reset">
+            </div>
+        </div>
+    </form>
+    </div>
+
+
+</body>
+</html>
