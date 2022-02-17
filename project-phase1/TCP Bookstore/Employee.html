@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Employee Access</title>
+    <script src="https://kit.fontawesome.com/7bf5f8ce75.js" crossorigin="anonymous"></script>
     <style>
         body{
             background-image: url(https://free4kwallpapers.com/uploads/originals/2015/09/25/blurred-web-backgrounds.jpg);
@@ -20,7 +21,7 @@
         min-height: 100vh;
         justify-content: space-evenly;
       }
-    .button1{
+      #button1{
         width: 400px;
         height: 300px;
         border: none;
@@ -34,11 +35,11 @@
         position:relative;
         z-index:1
     }
-    .button1:hover{
+    #button1:hover{
         color:lightgray;
         cursor: pointer;
     }
-    .button1::before{
+    #button1::before{
         transition: 0.5s all ease;
         position:absolute;
         left: 50%;
@@ -50,14 +51,14 @@
         background-color:rgb(35, 87, 134);
         border-radius: 12px;
     }
-    .button1:hover::before{
+    #button1:hover::before{
         transition: 0.5s all ease;
         left: 0;
         right: 0;
         opacity: 1;
         z-index: -1;
     }
-    .button2{
+    #button2{
         width: 400px;
         height: 300px;
         border: none;
@@ -71,11 +72,11 @@
         position:relative;
         z-index:1
     }
-    .button2:hover{
+    #button2:hover{
         color: lightgray;
         cursor: pointer;
     }
-    .button2::before{
+    #button2::before{
         transition: 0.5s all ease;
         position:absolute;
         left: 50%;
@@ -87,19 +88,40 @@
         background-color:rgb(35, 87, 134);
         border-radius: 12px;
     }
-    .button2:hover::before{
+    #button2:hover::before{
         transition: 0.5s all ease;
         left: 0;
         right: 0;
         opacity: 1;
         z-index: -1;
+    }
+    header {
+      background-color: rgb(35, 87, 134);
+      color:floralwhite;
+      opacity: 0.6;
+      text-align: center;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: larger;
+    }
+    .logout {
+      height: 20px;
+      width: 20px;
     }
     </style>
   </head>
   <body>
+    <header>
+      <h1>Employee Access</h1>
+      <div class="logout">
+      <a href="Login.index.html" 
+      <i class="fa-solid fa-right-from-bracket" 
+      style="text-decoration: none; color:floralwhite">Logout</i></a>
+    </div>
+    </header>
     <div class="container">
-      <button class="button1">Add Inventory</button>
-      <button class="button2">Search Inventory</button>
+      <button id="button1" onclick="location.href='AddBook.html'">Add Inventory</button>
+      <button id="button2" onclick="location.href='Search.html'">Search Inventory</button>
     </div>
   </body>
 </html>

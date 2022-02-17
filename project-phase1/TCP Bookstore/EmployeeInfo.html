@@ -5,68 +5,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Info</title>
+    <script src="https://kit.fontawesome.com/7bf5f8ce75.js" crossorigin="anonymous"></script>
     <style>
-        *{
-            margin: 10px;
+        body {
+            background-image: url(https://free4kwallpapers.com/uploads/originals/2015/09/25/blurred-web-backgrounds.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
         }
-        h1 {
-            border: double;
-            border-radius: 5px;
+        header {
             text-align: center;
-            text-transform: uppercase;
-            padding: 20px;
-            margin-left: 80px;
-            margin-right: 80px;
+            color:rgb(35, 87, 134);
         }
         .list1 {
             border: double;
             border-radius: 5px;
-            display: inline-block;
-            height: 300px;
-            width: 50%;
-            margin-left: 10px;
-            margin-right: 10px;
-
+            background-color: lightgray;
+            opacity: 60%;
+            color: rgb(35, 87, 134);
+            overflow-y: scroll;
+            text-align: left;
+            margin: 80px;
         }
-        .button1 {
-            border:double;
-            border-radius: 5px;
-            display: inline-block;
-            height: 185px;
-            width: 43%;
+        h2 {
             text-align: center;
-            padding-top: 115px;
         }
-        .list2 {
-            border:double;
+        td {
+           min-width: 100vh;
+        }
+        tr:hover {
+            background-color: rgb(35, 87, 134);
+            color:floralwhite
+        }
+        .button {           
+            border: double;
+            border-radius: 5px;
+            font-size: 30px;
+            background-color: lightgray;
+            color:rgb(35, 87, 134);
+            opacity: 60%;
+            box-shadow: inset 0 0 0 0 rgb(35, 87, 134);
+            transition: ease-out 0.3s;
+            font-size: 2rem;
+            font: bold 30px Arial;
+            text-decoration: none;
+            padding: 10px 16px 10px 16px;
+            border-top: 1px solid #CCCCCC;
+            border-right: 1px solid #333333;
+            border-bottom: 1px solid #333333;
+            border-left: 1px solid #CCCCCC;
+        }
+        .button:hover {
+            cursor: pointer;
+            border: double;
+            border-radius: 5px;
+            box-shadow: inset 400px 0 0 0 rgb(35, 87, 134);
+            color: floralwhite;
+            border: double;
             border-radius: 5px;
         }
-        h3 {
+        header {
+            background-color: rgb(35, 87, 134);
+            color:floralwhite;
+            opacity: 0.6;
             text-align: center;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: larger;
+    }
+        .logout {
+            height: 20px;
+            width: 20px;
+    }
+        nav {
+            display: inline-flex;
+            flex-direction: column;
+            height: 30px;
+            font-size: 25px;
+            opacity: 0.6;
         }
     </style>
 </head>
 <body>
-    <h1>Employee Info</h1>
+    <header>
+        <h1>Employee Info</h1>
+            <div class="logout">
+                <a href="Login.index.html" 
+                <i class="fa-solid fa-right-from-bracket" 
+                style="text-decoration: none; color:floralwhite;">Logout</i></a>
+          </div>
+    </header><br/>
+    <div class="navbar">
+    <nav>
+        <a href="Search.html" <i class="fa-solid fa-magnifying-glass" style="text-decoration:none; color:rgb(35, 87, 134);"></i>Search Inventory</a>
+        <a href="AddBook.html" <i class="fa-solid fa-plus" style="text-decoration:none; color:rgb(35, 87, 134);"></i>Add Book</a>
+    </nav>
+    </div>
     <div class="list1">
-        <h3>Team Members</h3>
-        <ul>
-            <li>John Doe</li>
-            <li>Jane Doe</li>
-            <li>Mike Smith</li>
-            <li>Amanda Thomas</li>
-        </ul>
+        <h2>Team Members</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Type of Access</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>Manager</td>
+            </tr>
+            <tr>
+                <td>Jane Doe</td>
+                <td>Employee</td>
+            </tr>
+            <tr>
+                <td>Mike Smith</td>
+                <td>Employee</td>
+            </tr>
+            <tr>
+                <td>Amanda Thomas</td>
+                <td>Employee</td>
+            </tr>
+            <tr>
+                <td>Mary Stewart</td>
+                <td>Manager</td>
+            </tr>
+            <tr>
+                <td>Henry Robinson</td>
+                <td>Employee</td>
+            </tr>
+            <tr>
+                <td>Steven Miller</td>
+                <td>Employee</td>
+            </tr>
+            <tr>
+                <td>Erica Lewis</td>
+                <td>Employee</td>
+            </tr>
+        </table>
     </div>
-    <div class="button1">
-        <button>Add Team Member</button>
-    </div>
-    <div class="list2">
-        <ul>
-            <li>John Doe</li>
-            <li>Jane Doe</li>
-            <li>Mike Smith</li>
-            <li>Amanda Thomas</li>
-        </ul>
+    <div>
+        <a href="AddEmployee.html">
+        <button class="button">Add Employee</button>
+        </a>
     </div>
 </body>
 </html>

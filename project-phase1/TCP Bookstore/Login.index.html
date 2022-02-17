@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TCP Inventory</title>
+    <style>
+        body{
+        background-image: url(https://static.timesofisrael.com/blogs/uploads/2020/04/start-book-club.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        }
+        h1{
+            border: double;
+            padding: 40px;
+            margin: 50px;
+            text-align: center;
+            color:floralwhite
+        }
+        h2{
+            font-size: 200%;
+            color:floralwhite;
+        }
+        #username {
+          color:floralwhite;
+        }
+        #pwd {
+          color:floralwhite;
+        }
+        label {
+          color:floralwhite;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+    <h1>TCP Bookstore Inventory</h1>
+      </header>
+    <h2>Employee Login</h2>
+    <br />
+    <form id="formlog" method="post">
+      <input type="text" id="username" name="username" placeholder="Employee ID" required /><br /><br/>
+      <!--password is currently masked; want to show dots-->
+      <input type="password" id="pwd" name="pwd" placeholder="Password" required />
+      <br /><br />
+      <button onclick="myFunction()" id="submit" value="Login" name="logButton">Login</button>
+      <input type="Reset" value="Clear" />
+    </form>
+  </body>
+  <script>
+    var form=document.getElementById('formlog')
+    form.addEventListener('submit',function(event){
+      event.preventDefault()
+
+      var username=document.getElementById('username').value
+
+      console.log(username)
+
+      var pwd=document.getElementById('pwd').value
+
+      console.log(pwd)
+    })
+
+    function myFunction(){
+      document.getElementById
+      {
+          var username=document.forms['formlog']['username'].value;
+          var pwd=document.forms['formlog']['pwd'].value
+          if(username=="employee" && pwd=="1234"){
+      window.location.href="Employee.html";
+      }
+      else if(username=="manager" && pwd=="5678"){
+        window.location.href="Manager.html";
+      }
+      else{
+          alert("Invalid Login Credentials");
+      }
+      }
+    }
+    /*function myFunction(){
+      document.getElementById
+      {
+          var username=document.forms['formlog']['username'].value;
+          var pwd=document.forms['formlog']['pwd'].value
+          if(username=="manager" && pwd=="5678")
+      {
+      window.location.href="Manager.html";
+      }
+      else{
+          alert("Invalid Login Credentials");
+      }
+      }
+    }*/
+  </script>
+</html>

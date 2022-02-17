@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Search Inventory</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Inventory</title>
     <script src="https://kit.fontawesome.com/7bf5f8ce75.js" crossorigin="anonymous"></script>
     <style>
         body{
@@ -56,7 +56,7 @@
 </head>
 <body>
     <header>
-        <h1>Search Inventory</h1>
+        <h1>Add Rare Book</h1>
         <div class="logout">
             <a href="Login.index.html" 
             <i class="fa-solid fa-right-from-bracket" 
@@ -66,7 +66,7 @@
 
     <div id="navbar">
         <nav>
-            <a href="AddBook.html" <i class="fa-solid fa-plus" style="text-decoration:none; color:rgb(35, 87, 134);"></i> Add Book</a>
+            <a href="Search.html" <i class="fa-solid fa-magnifying-glass" style="text-decoration:none; color:rgb(35, 87, 134);"></i> Search Inventory</a>
             <a href="EmployeeInfo.html" <i class="fa-solid fa-users" style="text-decoration:none; color:rgb(35, 87, 134);"></i> Employee Info</a>
         </nav>
         </div>
@@ -95,5 +95,29 @@
     </div>
     </form>
 </body>
+<script>
+    var form=document.getElementById('addform')
+    form.addEventListener('submit',function(event){
+        event.preventDefault()
+        
+        var title=document.getElementById('title').value
+        console.log(title)
 
+        var author=document.getElementById('author').value
+        console.log(author)
+
+        var price=document.getElementById('price').value
+        console.log(price)
+
+        var location=document.getElementById('location').value
+        console.log(location)
+
+        var condition=document.getElementById('condition').value
+        console.log(condition)
+    })
+
+    function addFunction(){
+        
+    }
+</script>
 </html>

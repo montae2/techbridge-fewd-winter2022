@@ -4,11 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add Employee</title>
+    <script src="https://kit.fontawesome.com/7bf5f8ce75.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-image: url(https://free4kwallpapers.com/uploads/originals/2015/09/25/blurred-web-backgrounds.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        nav {
+            display: inline-flex;
+            flex-direction: column;
+            height: 30px;
+            font-size: 25px;
+            opacity: 0.6;
+        }
+        .inp {
+            display: flex;
+            flex-direction: column;
+            margin-left: 200px;
+            margin-right: 200px;
+        } 
+        .radio {
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        header {
+            background-color: rgb(35, 87, 134);
+            color:floralwhite;
+            opacity: 0.6;
+            text-align: center;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: larger;
+        }
+        .logout {
+            height: 20px;
+            width: 20px;
+        }
+        .memberform {
+            padding-top: 100px;
+        }
+        .btns {
+            margin-left: 200px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Add Team Member</h1>
-    <div class="form">
+    <header>
+        <h1>Add Team Member</h1>
+        <div class="logout">
+            <a href="Login.index.html" 
+            <i class="fa-solid fa-right-from-bracket" 
+            style="text-decoration: none; color:floralwhite;">Logout</i></a>
+          </div>
+    </header><br/>
+
+    <div id="navbar">
+        <nav>
+            <a href="Search.html" <i class="fa-solid fa-magnifying-glass" style="text-decoration:none; color:rgb(35, 87, 134);"></i> Search Inventory</a>
+            <a href="AddBook.html" <i class="fa-solid fa-plus" style="text-decoration:none; color:rgb(35, 87, 134);"></i> Add Book</a>
+        </nav>
+        </div>
+    <div class="memberform">
         <div class="inp">
             <label>First Name</label>
             <input type="text"><br/>
@@ -20,12 +79,15 @@
             <input type="text"><br/>
         </div>
             <div class="radio">
-                <label>Type of Access</label>
-                <input type="checkbox" id="checkbox1" Name="Manager"><input type="checkbox" id="checkbox2" Name="Employee">
-            </div>
+                <label>Type of Access:</label>
+                <label for="checkbox1">Manager</label>
+                <input type="checkbox" id="checkbox1" Name="Manager">
+                <label for="checkbox2">Employee</label>
+                <input type="checkbox" id="checkbox2" Name="Employee">
+            </div><br/>
                 <div class="btns">
-                    <input type="submit" Name="Add">
-                    <button>Cancel</button>
+                    <input type="submit" name="submit">
+                    <input type="reset">
                 </div>
     </div>
 </body>

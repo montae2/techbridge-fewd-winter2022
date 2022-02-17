@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Employee Access</title>
+    <title>Manager Access</title>
+    <script src="https://kit.fontawesome.com/7bf5f8ce75.js" crossorigin="anonymous"></script>
     <style>
         body{
             background-image: url(https://free4kwallpapers.com/uploads/originals/2015/09/25/blurred-web-backgrounds.jpg);
@@ -131,13 +132,34 @@
         opacity: 1;
         z-index: -1;
     }
+    header {
+      background-color: rgb(35, 87, 134);
+      color:floralwhite;
+      opacity: 0.6;
+      text-align: center;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: larger;
+    }
+    .logout {
+      height: 20px;
+      width: 20px;
+    }
     </style>
   </head>
 <body>
+    <header>
+        <h1>Manager Access</h1>
+        <div class="logout">
+        <a href="Login.index.html" 
+        <i class="fa-solid fa-right-from-bracket" 
+        style="text-decoration: none; color:floralwhite">Logout</i></a>
+      </div>
+      </header>
     <div class="container">
-      <button class="button1">Add Inventory</button>
-      <button class="button2">Search Inventory</button>
-      <button class="button3">Employee Info</button>
+      <button class="button1" onclick="location.href='AddBook.html'">Add Inventory</button>
+      <button class="button2" onclick="location.href='Search.html'">Search Inventory</button>
+      <button class="button3" onclick="location.href='EmployeeInfo.html'">Employee Info</button>
     </div>
   </body>
 </html>
