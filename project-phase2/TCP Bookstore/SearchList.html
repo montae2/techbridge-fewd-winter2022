@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search List</title>
+    <script src="https://kit.fontawesome.com/7bf5f8ce75.js" crossorigin="anonymous"></script>
+<style>
+    body {
+            background-image: url(https://free4kwallpapers.com/uploads/originals/2015/09/25/blurred-web-backgrounds.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+    }
+    header {
+            background-color: rgb(35, 87, 134);
+            color:floralwhite;
+            opacity: 0.6;
+            text-align: center;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: larger;
+    }
+    .searchnav {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin-left: 200px;
+
+    }
+    #searchbar {
+        width: 70%;
+    }
+    .booklist {
+        border: double;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Search List</h1>
+        <div class="logout">
+            <a href="Login.index.html" 
+            <i class="fa-solid fa-right-from-bracket" 
+            style="text-decoration: none; color:floralwhite;">Logout</i></a>
+          </div>
+
+        </div>
+    </header>
+    <nav>
+        <div class="searchnav">
+            <input type="text" id="searchbar" name="searchbar" placeholder="Search Title, Author, or Price">
+            <button id="searchbtn" <i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </nav>
+        <div class="booklist">
+            <span id="title">Book List Here</span>
+            <span id="author"></span>
+            <span id="price"></span>
+            <span id="condition"></span>
+            <span id="location"></span>
+        </div>
+</body>
+</html>
