@@ -15,3 +15,8 @@ Within the project-phase1 folder, there is a folder titled "TCP Bookstore". In t
 - Styling for buttons titled "buttonstyles.css"
 - Webpage for managers after selecting to access employee information titled "EmployeeInfo.html"
 - Search Inventory page to be used for all employees titled "Search.html"
+
+
+A new folder was created titled Project Phase 2. Within that folder you will find:
+Folder titled: TCP Bookstore. This folder contains all webpages for the bookstore project thus far including the latest prototype request from the client titled "SearchList.html".
+Folder titled: Phase 2. This folder contains the requested problems from the instructor's page.
